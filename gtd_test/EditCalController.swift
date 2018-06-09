@@ -9,7 +9,7 @@
 import UIKit
 import EventKit
 
-class  EditCalController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class EditCalController: UIViewController {
     
     @IBOutlet weak var editCalTableView: UITableView!
     
@@ -51,17 +51,14 @@ class  EditCalController: UIViewController, UITableViewDelegate, UITableViewData
         self.editCalTableView.register(nib, forCellReuseIdentifier: "CalendarTableViewCell")
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        if self.titleIdentifier == 0 {
-            return 1
-        }
-        return 1
-    }
+}
+
+extension EditCalController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if self.titleIdentifier == 1 && section == 0{
+        if self.titleIdentifier == 1 && section == 0 {
             return 1
-        }else if titleIdentifier == 1 && section == 1 {
+        } else if titleIdentifier == 1 && section == 1 {
             return 8
         }else if titleIdentifier == 0 {
             return calendarList!.count
@@ -99,7 +96,7 @@ class  EditCalController: UIViewController, UITableViewDelegate, UITableViewData
         }else if titleIdentifier == 0 {
             cell.eventStartTime.text = nil
             cell.eventLabel?.text = calendarList?[indexPath.row].title
-
+            
             if calendarList?[indexPath.row] == event.calendar {
                 cell.accessoryType = .checkmark
                 selectedIndexPath = indexPath
@@ -110,6 +107,10 @@ class  EditCalController: UIViewController, UITableViewDelegate, UITableViewData
         }
         return cell
     }
+    
+}
+
+extension EditCalController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
@@ -126,8 +127,8 @@ class  EditCalController: UIViewController, UITableViewDelegate, UITableViewData
         }catch{
             print("error")
         }
-    
+        
     }
-    
+
     
 }
