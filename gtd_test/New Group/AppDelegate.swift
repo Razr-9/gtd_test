@@ -7,15 +7,46 @@
 //
 
 import UIKit
+import UserNotifications
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //MARK: ------------ IQKeyboardManager
+        let manager =  IQKeyboardManager.shared
+        manager.enable = true
+        manager.shouldResignOnTouchOutside = true//控制点击背景是否收起键盘
+        manager.enableAutoToolbar = false //控制是否显示键盘上的工具栏
+        
+        // Override point for customization after application launch.
+      
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert,.sound,.badge, .carPlay], completionHandler: { (granted, error) in
+            if granted {
+                print("允許")
+            } else {
+                print("不允許")
+            }
+        })
+
+        if UserDefaults.standard.bool(forKey: "isFirstLaunch") == false {
+            UserDefaults.standard.set(true, forKey: "isFirstLaunch")
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            let VC = sb.instantiateViewController(withIdentifier: "FirstLaunchViewController")
+            self.window?.rootViewController = VC
+            self.window?.makeKeyAndVisible()
+        }else {
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            let VC = sb.instantiateViewController(withIdentifier: "navigation")
+            self.window?.rootViewController = VC
+            self.window?.makeKeyAndVisible()
+        }
+        
         return true
     }
 
@@ -31,6 +62,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
@@ -41,6 +73,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+
+    
 
 }
 

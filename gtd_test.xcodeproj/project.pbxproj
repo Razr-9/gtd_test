@@ -3,25 +3,71 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BCDF8ADEA74C070EB0859428 /* Pods_gtd_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA820E91C36E241DB3F500B1 /* Pods_gtd_test.framework */; };
+		E487BE1820CBB77F00C289F9 /* HRToast+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E487BE1720CBB77F00C289F9 /* HRToast+UIView.swift */; };
+		FD215E99209AB59B002755F7 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = FD215E98209AB59B002755F7 /* background.png */; };
+		FD215E9B209AD4E6002755F7 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FD215E9A209AD4E6002755F7 /* icon.png */; };
+		FD229D45200DDF66005FFB58 /* NewItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD229D44200DDF66005FFB58 /* NewItemController.swift */; };
+		FD29A755200C96F4005D74E0 /* EventDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD29A754200C96F4005D74E0 /* EventDetailsController.swift */; };
+		FDCCFCAA209995FC00DAE1FC /* FirstLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCCFCA9209995FC00DAE1FC /* FirstLaunchViewController.swift */; };
 		FDE8E1DF200891B1001FC607 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE8E1DE200891B1001FC607 /* AppDelegate.swift */; };
-		FDE8E1E1200891B1001FC607 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE8E1E0200891B1001FC607 /* ViewController.swift */; };
+		FDE8E1E1200891B1001FC607 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE8E1E0200891B1001FC607 /* TodayViewController.swift */; };
 		FDE8E1E4200891B1001FC607 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDE8E1E2200891B1001FC607 /* Main.storyboard */; };
 		FDE8E1E6200891B1001FC607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDE8E1E5200891B1001FC607 /* Assets.xcassets */; };
 		FDE8E1E9200891B1001FC607 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDE8E1E7200891B1001FC607 /* LaunchScreen.storyboard */; };
+		FDE8E1F32008A66D001FC607 /* CalendarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE8E1F12008A66D001FC607 /* CalendarTableViewCell.swift */; };
+		FDE8E1F42008A66D001FC607 /* CalendarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDE8E1F22008A66D001FC607 /* CalendarTableViewCell.xib */; };
+		FDE8E1F72008A683001FC607 /* ReminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE8E1F52008A683001FC607 /* ReminderTableViewCell.swift */; };
+		FDE8E1F82008A683001FC607 /* ReminderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDE8E1F62008A683001FC607 /* ReminderTableViewCell.xib */; };
+		FDF6840D2050D464006A25B9 /* iconfont.js in Resources */ = {isa = PBXBuildFile; fileRef = FDF684032050D464006A25B9 /* iconfont.js */; };
+		FDF6840E2050D464006A25B9 /* demo.css in Resources */ = {isa = PBXBuildFile; fileRef = FDF684042050D464006A25B9 /* demo.css */; };
+		FDF6840F2050D464006A25B9 /* iconfont.woff in Resources */ = {isa = PBXBuildFile; fileRef = FDF684052050D464006A25B9 /* iconfont.woff */; };
+		FDF684102050D464006A25B9 /* iconfont.eot in Resources */ = {isa = PBXBuildFile; fileRef = FDF684062050D464006A25B9 /* iconfont.eot */; };
+		FDF684112050D464006A25B9 /* demo_fontclass.html in Resources */ = {isa = PBXBuildFile; fileRef = FDF684072050D464006A25B9 /* demo_fontclass.html */; };
+		FDF684122050D464006A25B9 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDF684082050D464006A25B9 /* iconfont.ttf */; };
+		FDF684132050D464006A25B9 /* demo_unicode.html in Resources */ = {isa = PBXBuildFile; fileRef = FDF684092050D464006A25B9 /* demo_unicode.html */; };
+		FDF684142050D464006A25B9 /* iconfont.svg in Resources */ = {isa = PBXBuildFile; fileRef = FDF6840A2050D464006A25B9 /* iconfont.svg */; };
+		FDF684152050D464006A25B9 /* iconfont.css in Resources */ = {isa = PBXBuildFile; fileRef = FDF6840B2050D464006A25B9 /* iconfont.css */; };
+		FDF684162050D464006A25B9 /* demo_symbol.html in Resources */ = {isa = PBXBuildFile; fileRef = FDF6840C2050D464006A25B9 /* demo_symbol.html */; };
+		FDFAA38D2011D15600928EC1 /* EditCalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFAA38C2011D15600928EC1 /* EditCalController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50A31F7B5A82BD63A872D9EC /* Pods-gtd_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gtd_test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gtd_test/Pods-gtd_test.debug.xcconfig"; sourceTree = "<group>"; };
+		80E4B9130E7BB983FD2BFD55 /* Pods-gtd_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gtd_test.release.xcconfig"; path = "Pods/Target Support Files/Pods-gtd_test/Pods-gtd_test.release.xcconfig"; sourceTree = "<group>"; };
+		E487BE1720CBB77F00C289F9 /* HRToast+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HRToast+UIView.swift"; sourceTree = "<group>"; };
+		FA820E91C36E241DB3F500B1 /* Pods_gtd_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gtd_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD215E98209AB59B002755F7 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		FD215E9A209AD4E6002755F7 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		FD229D44200DDF66005FFB58 /* NewItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemController.swift; sourceTree = "<group>"; };
+		FD29A754200C96F4005D74E0 /* EventDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsController.swift; sourceTree = "<group>"; };
+		FDCCFCA9209995FC00DAE1FC /* FirstLaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLaunchViewController.swift; sourceTree = "<group>"; };
 		FDE8E1DB200891B1001FC607 /* gtd_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gtd_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDE8E1DE200891B1001FC607 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FDE8E1E0200891B1001FC607 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDE8E1E0200891B1001FC607 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		FDE8E1E3200891B1001FC607 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDE8E1E5200891B1001FC607 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDE8E1E8200891B1001FC607 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDE8E1EA200891B1001FC607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDE8E1F12008A66D001FC607 /* CalendarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewCell.swift; sourceTree = "<group>"; };
+		FDE8E1F22008A66D001FC607 /* CalendarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarTableViewCell.xib; sourceTree = "<group>"; };
+		FDE8E1F52008A683001FC607 /* ReminderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderTableViewCell.swift; sourceTree = "<group>"; };
+		FDE8E1F62008A683001FC607 /* ReminderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReminderTableViewCell.xib; sourceTree = "<group>"; };
+		FDF684032050D464006A25B9 /* iconfont.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = iconfont.js; sourceTree = "<group>"; };
+		FDF684042050D464006A25B9 /* demo.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = demo.css; sourceTree = "<group>"; };
+		FDF684052050D464006A25B9 /* iconfont.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.woff; sourceTree = "<group>"; };
+		FDF684062050D464006A25B9 /* iconfont.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.eot; sourceTree = "<group>"; };
+		FDF684072050D464006A25B9 /* demo_fontclass.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo_fontclass.html; sourceTree = "<group>"; };
+		FDF684082050D464006A25B9 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
+		FDF684092050D464006A25B9 /* demo_unicode.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo_unicode.html; sourceTree = "<group>"; };
+		FDF6840A2050D464006A25B9 /* iconfont.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = iconfont.svg; sourceTree = "<group>"; };
+		FDF6840B2050D464006A25B9 /* iconfont.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = iconfont.css; sourceTree = "<group>"; };
+		FDF6840C2050D464006A25B9 /* demo_symbol.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo_symbol.html; sourceTree = "<group>"; };
+		FDFAA38C2011D15600928EC1 /* EditCalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCalController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +75,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCDF8ADEA74C070EB0859428 /* Pods_gtd_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		892EE50C99D811C2F9814412 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA820E91C36E241DB3F500B1 /* Pods_gtd_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE62C935342C04D8D6D12C5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50A31F7B5A82BD63A872D9EC /* Pods-gtd_test.debug.xcconfig */,
+				80E4B9130E7BB983FD2BFD55 /* Pods-gtd_test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FD3CBD562015A85C007A2FCF /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				FDE8E1F12008A66D001FC607 /* CalendarTableViewCell.swift */,
+				FDE8E1F22008A66D001FC607 /* CalendarTableViewCell.xib */,
+				FDE8E1F52008A683001FC607 /* ReminderTableViewCell.swift */,
+				FDE8E1F62008A683001FC607 /* ReminderTableViewCell.xib */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
 		FDE8E1D2200891B1001FC607 = {
 			isa = PBXGroup;
 			children = (
 				FDE8E1DD200891B1001FC607 /* gtd_test */,
 				FDE8E1DC200891B1001FC607 /* Products */,
+				DE62C935342C04D8D6D12C5E /* Pods */,
+				892EE50C99D811C2F9814412 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +131,56 @@
 		FDE8E1DD200891B1001FC607 /* gtd_test */ = {
 			isa = PBXGroup;
 			children = (
-				FDE8E1DE200891B1001FC607 /* AppDelegate.swift */,
-				FDE8E1E0200891B1001FC607 /* ViewController.swift */,
+				FDF684022050D464006A25B9 /* font_vgptdtcm3a5opqfr */,
+				FDE8E1F92008A6A3001FC607 /* New Group */,
+				FDE8E1F0200891BE001FC607 /* Controller */,
+				FD3CBD562015A85C007A2FCF /* TableViewCells */,
 				FDE8E1E2200891B1001FC607 /* Main.storyboard */,
-				FDE8E1E5200891B1001FC607 /* Assets.xcassets */,
-				FDE8E1E7200891B1001FC607 /* LaunchScreen.storyboard */,
 				FDE8E1EA200891B1001FC607 /* Info.plist */,
+				FD215E98209AB59B002755F7 /* background.png */,
+				FD215E9A209AD4E6002755F7 /* icon.png */,
+				E487BE1720CBB77F00C289F9 /* HRToast+UIView.swift */,
 			);
 			path = gtd_test;
+			sourceTree = "<group>";
+		};
+		FDE8E1F0200891BE001FC607 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FDCCFCA9209995FC00DAE1FC /* FirstLaunchViewController.swift */,
+				FDE8E1E0200891B1001FC607 /* TodayViewController.swift */,
+				FD29A754200C96F4005D74E0 /* EventDetailsController.swift */,
+				FDFAA38C2011D15600928EC1 /* EditCalController.swift */,
+				FD229D44200DDF66005FFB58 /* NewItemController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FDE8E1F92008A6A3001FC607 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				FDE8E1DE200891B1001FC607 /* AppDelegate.swift */,
+				FDE8E1E5200891B1001FC607 /* Assets.xcassets */,
+				FDE8E1E7200891B1001FC607 /* LaunchScreen.storyboard */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		FDF684022050D464006A25B9 /* font_vgptdtcm3a5opqfr */ = {
+			isa = PBXGroup;
+			children = (
+				FDF684032050D464006A25B9 /* iconfont.js */,
+				FDF684042050D464006A25B9 /* demo.css */,
+				FDF684052050D464006A25B9 /* iconfont.woff */,
+				FDF684062050D464006A25B9 /* iconfont.eot */,
+				FDF684072050D464006A25B9 /* demo_fontclass.html */,
+				FDF684082050D464006A25B9 /* iconfont.ttf */,
+				FDF684092050D464006A25B9 /* demo_unicode.html */,
+				FDF6840A2050D464006A25B9 /* iconfont.svg */,
+				FDF6840B2050D464006A25B9 /* iconfont.css */,
+				FDF6840C2050D464006A25B9 /* demo_symbol.html */,
+			);
+			path = font_vgptdtcm3a5opqfr;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDE8E1ED200891B1001FC607 /* Build configuration list for PBXNativeTarget "gtd_test" */;
 			buildPhases = (
+				9E24F91C8318B8AC9E91A5D6 /* [CP] Check Pods Manifest.lock */,
 				FDE8E1D7200891B1001FC607 /* Sources */,
 				FDE8E1D8200891B1001FC607 /* Frameworks */,
 				FDE8E1D9200891B1001FC607 /* Resources */,
+				E9AFA3F7C92EFE261638A2B4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -91,17 +212,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Razr;
 				TargetAttributes = {
 					FDE8E1DA200891B1001FC607 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = FDE8E1D6200891B1001FC607 /* Build configuration list for PBXProject "gtd_test" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -125,19 +245,81 @@
 			files = (
 				FDE8E1E9200891B1001FC607 /* LaunchScreen.storyboard in Resources */,
 				FDE8E1E6200891B1001FC607 /* Assets.xcassets in Resources */,
+				FD215E9B209AD4E6002755F7 /* icon.png in Resources */,
+				FDF684142050D464006A25B9 /* iconfont.svg in Resources */,
 				FDE8E1E4200891B1001FC607 /* Main.storyboard in Resources */,
+				FDF6840E2050D464006A25B9 /* demo.css in Resources */,
+				FDF6840F2050D464006A25B9 /* iconfont.woff in Resources */,
+				FD215E99209AB59B002755F7 /* background.png in Resources */,
+				FDF684102050D464006A25B9 /* iconfont.eot in Resources */,
+				FDF684132050D464006A25B9 /* demo_unicode.html in Resources */,
+				FDE8E1F42008A66D001FC607 /* CalendarTableViewCell.xib in Resources */,
+				FDF684122050D464006A25B9 /* iconfont.ttf in Resources */,
+				FDF6840D2050D464006A25B9 /* iconfont.js in Resources */,
+				FDE8E1F82008A683001FC607 /* ReminderTableViewCell.xib in Resources */,
+				FDF684162050D464006A25B9 /* demo_symbol.html in Resources */,
+				FDF684112050D464006A25B9 /* demo_fontclass.html in Resources */,
+				FDF684152050D464006A25B9 /* iconfont.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9E24F91C8318B8AC9E91A5D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gtd_test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9AFA3F7C92EFE261638A2B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-gtd_test/Pods-gtd_test-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gtd_test/Pods-gtd_test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FDE8E1D7200891B1001FC607 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDE8E1E1200891B1001FC607 /* ViewController.swift in Sources */,
+				FDE8E1E1200891B1001FC607 /* TodayViewController.swift in Sources */,
+				FDFAA38D2011D15600928EC1 /* EditCalController.swift in Sources */,
+				FD229D45200DDF66005FFB58 /* NewItemController.swift in Sources */,
 				FDE8E1DF200891B1001FC607 /* AppDelegate.swift in Sources */,
+				FDCCFCAA209995FC00DAE1FC /* FirstLaunchViewController.swift in Sources */,
+				E487BE1820CBB77F00C289F9 /* HRToast+UIView.swift in Sources */,
+				FDE8E1F32008A66D001FC607 /* CalendarTableViewCell.swift in Sources */,
+				FD29A755200C96F4005D74E0 /* EventDetailsController.swift in Sources */,
+				FDE8E1F72008A683001FC607 /* ReminderTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +359,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -184,6 +367,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -211,11 +395,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -234,6 +419,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -241,6 +427,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -262,41 +449,57 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		FDE8E1EE200891B1001FC607 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50A31F7B5A82BD63A872D9EC /* Pods-gtd_test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EX5R8ESH9W;
 				INFOPLIST_FILE = gtd_test/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Razr.gtd-test";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.runze.currently;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		FDE8E1EF200891B1001FC607 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80E4B9130E7BB983FD2BFD55 /* Pods-gtd_test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EX5R8ESH9W;
 				INFOPLIST_FILE = gtd_test/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Razr.gtd-test";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.runze.currently;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
